@@ -1,10 +1,10 @@
 import React from "react";
-import { Text, View } from "react-native";
-const ProfileScreen = () => {
+import { Text, View, TouchableOpacity } from "react-native";
+const ProfileScreen = ({navigation}) => {
   return (
-    <View>
+    <TouchableOpacity onPress={()=>navigation.openDrawer()}>
       <Text>ProfileScreen</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 export default ProfileScreen;
