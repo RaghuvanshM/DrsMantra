@@ -8,6 +8,7 @@ import Registrationdone from "../screen/Registrationdone";
 import DataScreen from "../screen/DataScreen";
 import { createStackNavigator } from "@react-navigation/stack";
 import Drowecontent from "./DrawerItem";
+import ChangeBeatScreen from "../screen/ChangeBeatScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -19,6 +20,7 @@ function AppRoutes() {
       initialRouteName="Home"
     >
       <Drawer.Screen name="Profile" component={DataScreen} />
+     <Drawer.Screen name="ChangeBeatScreen" component={ChangeBeatScreen}/>
     </Drawer.Navigator>
   );
 }

@@ -31,6 +31,13 @@ import DsrMantraScreen from "../screen/DsrMantraScreen";
 import ChangeBeatScreen from "../screen/ChangeBeatScreen";
 import TodayPerformanceScreen from "../screen/TodayPerformanceScreen";
 import TimeLineSceen from "../screen/TimeLineSceen";
+import PocketMIS from "../screen/PocketMIS";
+import PocketMis1 from "../screen/PocketMis1";
+import DayWiseScreen from "../screen/DayWiseScreen";
+import ProductWiseScreen from "../screen/ProductWiseScreen";
+import OrderScreen from "../screen/OrderScreen";
+import PendingRequestScreen from "../screen/PendingRequestScreen";
+import SupportScreen from "../screen/SupportScreen";
 
 const Stack = createStackNavigator();
 
@@ -69,6 +76,13 @@ function AuthRoutes() {
       <Stack.Screen name="ChangeBeatScreen" component={ChangeBeatScreen} />
       <Stack.Screen name="TodayPerformanceScreen" component={TodayPerformanceScreen} />
       <Stack.Screen name="TimeLineSceen" component={TimeLineSceen} />
+      <Stack.Screen name="PocketMIS" component={PocketMIS} />
+      <Stack.Screen name="PocketMis1" component={PocketMis1} />
+      <Stack.Screen name="DayWiseScreen" component={DayWiseScreen} />
+      <Stack.Screen name="ProductWiseScreen" component={ProductWiseScreen} />
+      <Stack.Screen name="OrderScreen" component={OrderScreen} />
+      <Stack.Screen name="PendingRequestScreen" component={PendingRequestScreen} />
+      <Stack.Screen name="SupportScreen" component={SupportScreen} />
     </Stack.Navigator>
   );
 }

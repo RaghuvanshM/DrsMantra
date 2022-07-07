@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View,TouchableOpacity } from 'react-native'
 import React from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign'
-
-const OutletHeader4 = () => {
+import Entypo from 'react-native-vector-icons/Entypo'
+const SupportHeader = () => {
   return (
     <View style={{
         height:60,
@@ -13,12 +13,12 @@ const OutletHeader4 = () => {
         alignItems:'center'
     }}>
     <AntDesign style={{marginLeft:10}} name='arrowleft' size={24} color='#000' />
-      <Text style={{fontWeight:'bold',color:'#000',marginLeft:10,fontSize:16}}>New Outlets -steps 4 of 4</Text>
-      
+      <Text style={{fontWeight:'bold',color:'#000',marginLeft:10,fontSize:16}}> Support</Text>
+     <Entypo name='arrow-up' size={24} color='#0e65f0' />
     </View>
   )
 }
 
-export default OutletHeader4
+export default SupportHeader
 
 const styles = StyleSheet.create({})

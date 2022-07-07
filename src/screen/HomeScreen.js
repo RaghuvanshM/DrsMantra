@@ -14,7 +14,7 @@ const HomeScreen = ({navigation}) => {
     <View>
     <View style={styles.container1}>
     
-    <Image style={{height:'80%', width:'80%'}} 
+    <Image style={{height:'60%', width:'80%'}} 
     source={require('../../assets/logo.png')} resizeMode="contain" />
     </View>
       
