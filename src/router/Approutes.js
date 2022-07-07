@@ -6,16 +6,31 @@ import HomeScreen from "../screen/HomeScreen";
 import OtpScreen from "../screen/OtpScreen";
 import Registrationdone from "../screen/Registrationdone";
 import DataScreen from "../screen/DataScreen";
+import { createStackNavigator } from "@react-navigation/stack";
+import Drowecontent from "./DrawerItem";
 
 const Drawer = createDrawerNavigator();
 
+const Stack = createStackNavigator();
 function AppRoutes() {
   return (
-    <Drawer.Navigator initialRouteName="Home">
-    <Drawer.Screen name="DataScreen" component={DataScreen} />
-    <Drawer.Screen name="Profile" component={ProfileScreen} />
-    
+    <Drawer.Navigator
+      drawerContent={(props) => <Drowecontent {...props} />}
+      initialRouteName="Home"
+    >
+      <Drawer.Screen name="Profile" component={DataScreen} />
     </Drawer.Navigator>
   );
 }
-export default AppRoutes;
+function AppStack() {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="HomeScreen" component={AppRoutes} />
+    </Stack.Navigator>
+  );
+}
+export default AppStack;
