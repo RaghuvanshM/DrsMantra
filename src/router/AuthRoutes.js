@@ -53,17 +53,28 @@ function AuthRoutes() {
       <Stack.Screen name="Registrationdone" component={Registrationdone} />
       <Stack.Screen name="Start" component={StartScreen} />
       <Stack.Screen name="ContinueScreen" component={ContinueScreen} />
-      
-      <Stack.Screen name="RetailingScreen" component={RetailingScreen} />
+
       <Stack.Screen name="OutScreen" component={OutScreen} />
-      <Stack.Screen name="NonProductiveScreen" component={NonProductiveScreen} />
-      <Stack.Screen name="NonProductiveRetailScreen" component={NonProductiveRetailScreen} />
-      <Stack.Screen name="RetailerOrderScreen" component={RetailerOrderScreen} />
+      <Stack.Screen
+        name="NonProductiveScreen"
+        component={NonProductiveScreen}
+      />
+      <Stack.Screen
+        name="NonProductiveRetailScreen"
+        component={NonProductiveRetailScreen}
+      />
+      <Stack.Screen
+        name="RetailerOrderScreen"
+        component={RetailerOrderScreen}
+      />
       <Stack.Screen name="DetailsScreen" component={DetailsScreen} />
       <Stack.Screen name="ConfirmationScreen" component={ConfirmationScreen} />
       <Stack.Screen name="OrderCnfScreen" component={OrderCnfScreen} />
       <Stack.Screen name="MapScreen" component={MapScreen} />
-      <Stack.Screen name="NoSalesReasonScreen" component={NoSalesReasonScreen} />
+      <Stack.Screen
+        name="NoSalesReasonScreen"
+        component={NoSalesReasonScreen}
+      />
       <Stack.Screen name="SalesReasonScreen" component={SalesReasonScreen} />
       <Stack.Screen name="DetailScreen" component={DetailScreen} />
       <Stack.Screen name="NewOutletScreen" component={NewOutletScreen} />
@@ -74,14 +85,20 @@ function AuthRoutes() {
       <Stack.Screen name="OutletImgScreen" component={OutletImgScreen} />
       <Stack.Screen name="DsrMantraScreen" component={DsrMantraScreen} />
       <Stack.Screen name="ChangeBeatScreen" component={ChangeBeatScreen} />
-      <Stack.Screen name="TodayPerformanceScreen" component={TodayPerformanceScreen} />
+      <Stack.Screen
+        name="TodayPerformanceScreen"
+        component={TodayPerformanceScreen}
+      />
       <Stack.Screen name="TimeLineSceen" component={TimeLineSceen} />
       <Stack.Screen name="PocketMIS" component={PocketMIS} />
       <Stack.Screen name="PocketMis1" component={PocketMis1} />
       <Stack.Screen name="DayWiseScreen" component={DayWiseScreen} />
       <Stack.Screen name="ProductWiseScreen" component={ProductWiseScreen} />
       <Stack.Screen name="OrderScreen" component={OrderScreen} />
-      <Stack.Screen name="PendingRequestScreen" component={PendingRequestScreen} />
+      <Stack.Screen
+        name="PendingRequestScreen"
+        component={PendingRequestScreen}
+      />
       <Stack.Screen name="SupportScreen" component={SupportScreen} />
     </Stack.Navigator>
   );
