@@ -1,23 +1,10 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from "@react-navigation/native";
-import AppRoutes from "./src/router/Approutes";
-import AuthRoutes from "./src/router/AuthRoutes";
-
-const Stack = createStackNavigator();
-
-function App() {
+import { Text, View } from "react-native";
+const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
-        <Stack.Screen name="Authroute" component={AuthRoutes} />
-        <Stack.Screen name="Approute" component={AppRoutes} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View>
+      <Text>this is component</Text>
+    </View>
   );
-}
+};
 export default App;
