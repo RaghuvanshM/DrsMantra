@@ -1,31 +1,30 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import AntDesign from 'react-native-vector-icons/AntDesign'
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from "react";
+import AntDesign from "react-native-vector-icons/AntDesign";
 
-const HeaderScreen3 = () => {
+const HeaderScreen3 = ({ navigation }) => {
   return (
     <View>
       <View style={styles.container}>
-      <AntDesign name='arrowleft' size={25} />
-      <Text>Change Beat</Text>
-     
+        <TouchableOpacity>
+          <AntDesign name="arrowleft" size={25} />
+        </TouchableOpacity>
+        <Text>Change Beat</Text>
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default HeaderScreen3
+export default HeaderScreen3;
 
 const styles = StyleSheet.create({
-    container:{
-        height:50,
-        width:'100%',
-        backgroundColor:'#fff',
-        flexDirection:'row',
-        alignItems:'center',
-        marginLeft:10,
-        borderBottomWidth:0.3
-
-
-    }
-})
+  container: {
+    height: 50,
+    width: "100%",
+    backgroundColor: "#fff",
+    flexDirection: "row",
+    alignItems: "center",
+    marginLeft: 10,
+    borderBottomWidth: 0.3,
+  },
+});

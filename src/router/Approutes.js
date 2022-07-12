@@ -9,6 +9,7 @@ import DataScreen from "../screen/DataScreen";
 import { createStackNavigator } from "@react-navigation/stack";
 import Drowecontent from "./DrawerItem";
 import ChangeBeatScreen from "../screen/ChangeBeatScreen";
+import RetailingScreen from "../screen/RetailingScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -19,8 +20,8 @@ function AppRoutes() {
       drawerContent={(props) => <Drowecontent {...props} />}
       initialRouteName="Home"
     >
-      <Drawer.Screen name="Profile" component={DataScreen} />
-     <Drawer.Screen name="ChangeBeatScreen" component={ChangeBeatScreen}/>
+      <Drawer.Screen name="DataScreen" component={DataScreen} />
+      <Drawer.Screen name="ChangeBeatScreen" component={ChangeBeatScreen} />
     </Drawer.Navigator>
   );
 }
@@ -32,6 +33,7 @@ function AppStack() {
       }}
     >
       <Stack.Screen name="HomeScreen" component={AppRoutes} />
+      <Stack.Screen name="RetailingScreen" component={RetailingScreen} />
     </Stack.Navigator>
   );
 }
