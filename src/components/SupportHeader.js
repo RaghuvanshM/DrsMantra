@@ -14,7 +14,11 @@ const SupportHeader = () => {
     }}>
     <AntDesign style={{marginLeft:10}} name='arrowleft' size={24} color='#000' />
       <Text style={{fontWeight:'bold',color:'#000',marginLeft:10,fontSize:16}}> Support</Text>
-     <Entypo name='arrow-up' size={24} color='#0e65f0' />
+      <TouchableOpacity>
+      
+      <Entypo style={{marginLeft:150}} name='arrow-up' size={24} color='#0e65f0' />
+      </TouchableOpacity>
+    
     </View>
   )
 }

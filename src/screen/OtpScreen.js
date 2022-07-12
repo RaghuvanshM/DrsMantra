@@ -20,7 +20,7 @@ const OtpScreen = ({navigation}) => {
      marginLeft:5, alignItems:'center'}}>
       <FontAwesome5  name='phone-alt' size={30} color='#036eb6' />
      <TextInput style={{marginLeft:5, padding:7,
-       borderBottomWidth:3, width:'80%', borderColor:'green'}}
+       borderBottomWidth:3, width:'80%', borderColor:'#5a7e94'}}
       placeholder='Enter Number' keyboardType='numeric' />
       
      </View>
@@ -30,7 +30,7 @@ const OtpScreen = ({navigation}) => {
      
       <FontAwesome5  name='lock' size={30} color='green' />
      <TextInput style={{marginLeft:5, padding:7, 
-      borderBottomWidth:3, width:'80%',borderColor:'green'}}
+      borderBottomWidth:3, width:'80%',borderColor:'#5a7e94'}}
       placeholder='Enter Code' keyboardType='numeric' />
       
      </View>
@@ -41,8 +41,12 @@ const OtpScreen = ({navigation}) => {
       >
       <Text style={{fontSize:15,color:'#fff'}} >Get Activation Code</Text>
       </TouchableOpacity>
-      <Text style={{padding:10, fontSize:12, marginTop:20, 
+      <View>
+      <Text style={{padding:10, fontSize:12, marginTop:10, 
         marginLeft:20,fontWeight:'400',color:'#000'}}>FOR QUERY CONTACT ON 011-411-7-99996</Text>
+      
+      </View>
+      
         </ScrollView>
     </View>
     
@@ -54,7 +58,8 @@ export default OtpScreen
 const styles = StyleSheet.create({
   logoContainer:{
     alignItems:'center',
-    padding:10
+    padding:10,
+    height:'45%'
   },
   img:{
     
@@ -67,6 +72,7 @@ const styles = StyleSheet.create({
     marginLeft:30,
     alignItems:'center',
     justifyContent:'center',
-    marginTop:20
+    marginTop:10,
+    borderRadius:3
   }
 })

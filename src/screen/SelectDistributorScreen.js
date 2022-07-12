@@ -1,0 +1,80 @@
+import React from 'react'
+import { StyleSheet, Text, View,TextInput,
+TouchableOpacity,ScrollView } from 'react-native'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import HeaderScreen2 from '../components/HeaderScreen2'
+
+
+const SelectDistributorScreen = ({navigation}) => {
+  return (
+    <View>
+    <View>
+    <HeaderScreen2/>
+   </View>
+   <ScrollView style={{padding:7}}>
+   <View style={{alignItems:'center'}}>
+   <TextInput style={styles.textInputStyle}
+   placeholder='Enter Official Work Name Here'  />
+   </View>
+   <View style={{marginTop:'10%',padding:7}}>
+     <TouchableOpacity style={{borderWidth:1,height:50,width:'99%',
+     alignSelf:'center',borderColor:'green',borderRadius:5}}>
+     <Text style={{fontWeight:'bold',marginTop:13,marginLeft:20}}>ARORA SALES ENT.</Text>
+     </TouchableOpacity>
+     </View>
+     <View style={{marginTop:'10%',padding:7}}>
+     <TouchableOpacity style={{
+      borderWidth:1,height:50,width:'99%',
+     alignSelf:'center',borderColor:'green',borderRadius:5}}>
+     <Text style={{fontWeight:'bold',marginTop:13,marginLeft:20}}>KRISHNA TRADERS</Text>
+     </TouchableOpacity>
+     </View>
+     <View style={{marginTop:'10%',padding:7}}>
+     <TouchableOpacity style={{
+      borderWidth:1,height:50,width:'99%',
+     alignSelf:'center',
+     borderColor:'green',
+     borderRadius:5}}>
+     <Text style={{fontWeight:'bold',marginTop:13,
+     marginLeft:20}}>MAHADEV TRADING CO.</Text>
+     </TouchableOpacity>
+     </View>
+     <View style={{marginTop:'10%',padding:7}}>
+     <TouchableOpacity style={{
+       borderWidth:1,height:50,width:'99%',
+     alignSelf:'center',
+     borderColor:'green',
+     borderRadius:5}}>
+     <Text style={{fontWeight:'bold',marginTop:13,marginLeft:20}}>SHARMA TRADERS</Text>
+     </TouchableOpacity>
+     </View>
+     <View style={{marginTop:'10%',padding:7}}>
+     <TouchableOpacity style={{borderWidth:1,height:50,width:'99%',
+     alignSelf:'center',borderColor:'green',borderRadius:5}}>
+     <Text style={{fontWeight:'bold',marginTop:13,marginLeft:20}}>DEMO DISTRIBUTOR</Text>
+     </TouchableOpacity>
+     </View>
+     <TouchableOpacity style={{height:50,width:'99%', 
+     backgroundColor:'#036eb6',alignSelf:'center',
+     marginTop:20,alignItems:'center',justifyContent:'center',
+     flexDirection:'row'}} onPress={()=>navigation.navigate('TimerScreen')} >
+     
+     <Text style={{color:'#fff'}}>NO DISTRIBUTOR SELECTED</Text>
+     <Ionicons name='arrow-forward' size={25} color='#fff' />
+     </TouchableOpacity>
+     </ScrollView>
+    </View>
+  )
+}
+
+export default SelectDistributorScreen
+
+const styles = StyleSheet.create({
+    textInputStyle:{
+        width:'99%',
+        borderWidth:0.5,
+        marginTop:10,
+        borderRadius:30,
+        
+    }
+})

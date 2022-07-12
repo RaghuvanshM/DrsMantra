@@ -1,19 +1,17 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import SignUpScreen from "../screen/Signup";
+import HomePage from "../app/HomePage";
 import HomeScreen from "../screen/HomeScreen";
 import OtpScreen from "../screen/OtpScreen";
 import Registrationdone from "../screen/Registrationdone";
 import StartScreen from "../screen/StartScreen";
-import DataScreen from "../screen/DataScreen";
 import ContinueScreen from "../screen/ContinueScreen";
 import RetailingScreen from "../screen/RetailingScreen";
 import OutScreen from "../screen/OutScreen";
 import NonProductiveScreen from "../screen/NonProductiveScreen";
 import NonProductiveRetailScreen from "../screen/NonProductiveRetailScreen";
 import RetailerOrderScreen from "../screen/RetailerOrderScreen";
-
 import DetailsScreen from "../screen/DetailsScreen";
 import ConfirmationScreen from "../screen/ConfirmationScreen";
 import OrderCnfScreen from "../screen/OrderCnfScreen";
@@ -38,6 +36,20 @@ import ProductWiseScreen from "../screen/ProductWiseScreen";
 import OrderScreen from "../screen/OrderScreen";
 import PendingRequestScreen from "../screen/PendingRequestScreen";
 import SupportScreen from "../screen/SupportScreen";
+import OfficialWorkDetailScreen from "../screen/OfficialWorkDetailScreen";
+import SelectDistributorScreen from "../screen/SelectDistributorScreen";
+import TimerScreen from "../screen/TimerScreen";
+import CameraScreen from "../screen/CameraScreen";
+import SummryDetailsScreen from "../screen/SummryDetailsScreen";
+
+import TheEndScreen from "../screen/TheEndScreen";
+import HomeScreenCrm from "../app/crm/HomeScreenCrm";
+
+import ManageLeadScreen from "../app/crm/ManageLeadScreen";
+import LeadsScreen from "../app/crm/LeadsScreen";
+
+
+
 
 const Stack = createStackNavigator();
 
@@ -48,12 +60,12 @@ function AuthRoutes() {
         headerShown: false,
       }}
     >
+    <Stack.Screen name="HomePage" component={HomePage} />
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="Otp" component={OtpScreen} />
       <Stack.Screen name="Registrationdone" component={Registrationdone} />
       <Stack.Screen name="Start" component={StartScreen} />
       <Stack.Screen name="ContinueScreen" component={ContinueScreen} />
-      
       <Stack.Screen name="RetailingScreen" component={RetailingScreen} />
       <Stack.Screen name="OutScreen" component={OutScreen} />
       <Stack.Screen name="NonProductiveScreen" component={NonProductiveScreen} />
@@ -83,6 +95,15 @@ function AuthRoutes() {
       <Stack.Screen name="OrderScreen" component={OrderScreen} />
       <Stack.Screen name="PendingRequestScreen" component={PendingRequestScreen} />
       <Stack.Screen name="SupportScreen" component={SupportScreen} />
+      <Stack.Screen name="OfficialWorkDetailScreen" component={OfficialWorkDetailScreen} />
+      <Stack.Screen name="SelectDistributorScreen" component={SelectDistributorScreen} />
+      <Stack.Screen name="TimerScreen" component={TimerScreen} />
+      <Stack.Screen name="CameraScreen" component={CameraScreen} />
+      <Stack.Screen name="SummryDetailsScreen" component={SummryDetailsScreen} />
+      <Stack.Screen name="TheEndScreen" component={TheEndScreen} />
+      <Stack.Screen name="HomeScreenCrm" component={HomeScreenCrm} />
+      <Stack.Screen name="LeadScreen" component={ManageLeadScreen} />
+      <Stack.Screen name="LeadsScreen" component={LeadsScreen} />
     </Stack.Navigator>
   );
 }
