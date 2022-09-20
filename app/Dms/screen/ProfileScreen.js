@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-function ContactUs() {
+function ProfileScreen() {
   return (
     <View>
-      <Text>ContactUs</Text>
+      <Text>ProfileScreen</Text>
     </View>
   );
 }
 
-export default ContactUs;
+export default ProfileScreen;
